@@ -1,0 +1,14 @@
+all:
+  hosts:
+    kubernetes-k3s-master-1:
+      ansible_host: 192.168.1.175
+      ansible_user: kubernetes
+      ansible_password: kubernetes
+    kubernetes-k3s-worker-2:
+      ansible_host: 192.168.1.176
+      ansible_user: kubernetes
+      ansible_password: kubernetes
+    kubernetes-k3s-worker-1:
+      ansible_host: 192.168.1.177
+      ansible_user: kubernetes
+      ansible_password: kubernetes

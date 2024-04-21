@@ -1,0 +1,14 @@
+---
+- name: Configure server
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Disable UFW (Uncomplicated Firewall)
+      systemd:
+        name: ufw
+        state: stopped
+        enabled: no
+
+    - name: Disable swap
+      shell: swapoff -a
